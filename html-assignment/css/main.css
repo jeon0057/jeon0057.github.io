@@ -27,7 +27,7 @@ nav ul {
     list-style: none;
 }
 
-nav a {
+a {
     text-decoration: none;
     background: rgb(194, 239, 191);
     border-color: rgb(89, 121, 87);
@@ -35,6 +35,6 @@ nav a {
     border-style: solid;
 }
 
-nav a:hover {
+a:hover {
     background-color: rgb(80, 163, 136);
 }
