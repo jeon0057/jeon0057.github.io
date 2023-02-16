@@ -22,3 +22,19 @@ article ul {
 article li:nth-child(odd) {
     background: rgb(241, 235, 218);
 }
+
+nav ul {
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    background: rgb(194, 239, 191);
+    border-color: rgb(89, 121, 87);
+    border-width: 1px;
+    border-style: solid;
+}
+
+nav a:hover {
+    background-color: rgb(80, 163, 136);
+}
