@@ -14,3 +14,11 @@ header, footer {
 #my-image {
     box-shadow: 0 0 2px 1px black;
 }
+
+article ul {
+    list-style: square;
+}
+
+article li:nth-child(odd) {
+    background: rgb(241, 235, 218);
+}
