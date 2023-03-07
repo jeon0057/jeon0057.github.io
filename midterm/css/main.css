@@ -50,3 +50,8 @@ table {
 body {
 	background-color: #aad4cf;
 }
+
+.wrapper {
+	width: 1028px;
+	margin:auto;
+}
