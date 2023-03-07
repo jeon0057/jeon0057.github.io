@@ -53,5 +53,17 @@ body {
 
 .wrapper {
 	width: 1028px;
-	margin:auto;
+	margin:0 auto 17px;
+}
+
+header {
+	position: relative;
+}
+
+h1 {
+	position:absolute;
+	top: 209px;
+	width: 100%;
+	text-align: center;
+	color:white;
 }
