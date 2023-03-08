@@ -66,7 +66,7 @@ header {
 	position: relative;
 }
 
-header>img {
+header img {
 	/* has image inside header take up entire width of the header */
 	width: 100%;
 }
@@ -79,4 +79,22 @@ h1 {
 	width: 100%;
 	text-align: center;
 	color:white;
+}
+
+nav {
+	text-align: center;
+}
+
+nav a {
+	text-decoration: none;
+}
+
+nav li {
+	display: inline-block;
+	padding: 16px 128px;
+	border-right: 1px solid #5c6565;
+}
+
+nav li:last-child {
+	border-right: none;
 }
