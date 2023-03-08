@@ -102,3 +102,11 @@ nav li:last-child {
 	/* removes border to the right of the last nav link */
 	border-right: none;
 }
+
+#story img {
+	width: 250px;
+	/* creates empty space all around the image */
+	padding: 10px;
+	/* floats image to the left and has the paragraph surround and flow around it to the right */
+	float: left;
+}
