@@ -86,15 +86,18 @@ nav {
 }
 
 nav a {
+	/* removes underline from nav links */
 	text-decoration: none;
 }
 
 nav li {
+	/* makes list elements sit in a row like inline elements while allowing block level property changes (like height) */
 	display: inline-block;
 	padding: 16px 128px;
 	border-right: 1px solid #5c6565;
 }
 
 nav li:last-child {
+	/* removes border to the right of the last nav link */
 	border-right: none;
 }
