@@ -126,3 +126,14 @@ nav li:last-child {
 .facts li {
 	list-style:inside;
 }
+
+#contact {
+	border: 1px solid black;
+	/* creates space left and right outside contact form border */
+	margin: 0 10px;
+}
+
+/* makes text bars in contact form take up the whole width of div so they move below their labels */
+#contact #name, #email, #message {
+	display: block;
+}
