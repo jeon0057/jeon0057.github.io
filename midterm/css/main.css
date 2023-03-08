@@ -116,3 +116,13 @@ nav li:last-child {
 	/* floats image to the left and has the paragraph surround and flow around it to the right */
 	float: left;
 }
+
+.facts {
+	/* ensures section doesn't wrap around floated image */
+	clear: left;
+	margin: 12px;
+}
+
+.facts li {
+	list-style:inside;
+}
