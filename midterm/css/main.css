@@ -50,6 +50,11 @@ table {
 } 
 /* end of css reset */
 
+/* sets root element font size for rem units to follow */
+html {
+    font-size: 16px;
+}
+
 /* adds light blue background colour behind all of the content */
 body {
 	background-color: #aad4cf;
