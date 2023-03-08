@@ -59,6 +59,7 @@ body {
 	width: 1028px;
 	/* centers the wrapper div horizontally with only a small margin at the bottom not the top */
 	margin:0 auto 17px;
+	background-color: #d4e9e7;
 }
 
 header {
