@@ -137,3 +137,8 @@ nav li:last-child {
 #contact #name, #email, #message {
 	display: block;
 }
+
+footer p {
+	text-align: right;
+	padding: 35px 33px 37px ;
+}
