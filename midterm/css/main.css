@@ -94,7 +94,8 @@ nav a {
 nav li {
 	/* makes list elements sit in a row like inline elements while allowing block level property changes (like height) */
 	display: inline-block;
-	padding: 16px 128px;
+	width: 33%;
+	padding: 16px 0;
 	border-right: 1px solid #5c6565;
 }
 
