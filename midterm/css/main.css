@@ -65,6 +65,10 @@ header {
 	position: relative;
 }
 
+header>img {
+	width: 100%;
+}
+
 h1 {
 	/* removes prop from the page and overlaps it on top of the header */
 	position:absolute;
