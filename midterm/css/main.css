@@ -1,3 +1,5 @@
+/* resets browser's css defaults to ensure the end user sees our exact design regardless of the browser they're using */
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -46,7 +48,9 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 } 
+/* end of css reset */
 
+/* adds light blue background colour behind all of the content */
 body {
 	background-color: #aad4cf;
 }
@@ -57,12 +61,15 @@ body {
 }
 
 header {
+	/* makes the header a stage for the main heading to be positioned relative to */
 	position: relative;
 }
 
 h1 {
+	/* removes prop from the page and overlaps it on top of the header */
 	position:absolute;
 	top: 209px;
+	/* spans width of the content(text box) all the way across the header */
 	width: 100%;
 	text-align: center;
 	color:white;
