@@ -132,15 +132,37 @@ nav li:last-child {
 	list-style:inside;
 }
 
-#contact {
+form {
 	border: 1px solid black;
 	/* creates space left and right outside contact form border */
 	margin: 0 10px;
+	padding-left: 16px;
+	padding-top: 15px;
 }
 
 /* makes text bars in contact form take up the whole width of div so they move below their labels */
 #contact #name, #email, #message {
 	display: block;
+	width: 972px;
+}
+
+label {
+	line-height: 1.5;
+}
+
+h4 {
+	line-height: 2.5;
+}
+
+textarea {
+	resize: none;
+}
+
+button {
+	background-color: transparent;
+	border: 1px solid black;
+	padding: 14px;
+	margin: 16px 0;
 }
 
 footer p {
