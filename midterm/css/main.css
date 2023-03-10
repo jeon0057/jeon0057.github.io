@@ -65,6 +65,7 @@ html {
 h1 {
 	/* removes title from the page and overlaps it on top of the header */
 	position:absolute;
+	/* moves heading relative to the image below because of the absolute value */
 	top: 209px;
 	/* spans width of the content(text box) all the way across the header in order to center it */
 	width: 100%;
@@ -90,6 +91,7 @@ h4 {
 
 p {
 	font-size: 1rem;
+	/* sets line spacing */
 	line-height: 1.5;
 }
 
@@ -111,10 +113,6 @@ header img {
 	width: 100%;
 }
 
-nav {
-	text-align: center;
-}
-
 nav a {
 	/* removes underline from nav links */
 	text-decoration: none;
@@ -128,6 +126,7 @@ nav li {
 	width: 32%;
 	padding: .5rem 0;
 	border-right: 1px solid #5c6565;
+	text-align: center;
 }
 
 nav li:last-child {
