@@ -53,6 +53,8 @@ table {
 
 body {
 	font-family:Arial, Helvetica, sans-serif;
+	/* adds light blue background colour behind all of the content */
+	background-color: #aad4cf;
 }
 
 /* sets root element font size for rem units to follow */
@@ -60,9 +62,35 @@ html {
     font-size: 16px;
 }
 
-/* adds light blue background colour behind all of the content */
-body {
-	background-color: #aad4cf;
+h1 {
+	/* removes title from the page and overlaps it on top of the header */
+	position:absolute;
+	top: 209px;
+	/* spans width of the content(text box) all the way across the header in order to center it */
+	width: 100%;
+	text-align: center;
+	color:white;
+	/* 4*16px = 64px */
+	font-size: 4rem;
+}
+
+h2 {
+	font-size: 2rem;
+	padding: 1rem 0;
+}
+
+h3 {
+	font-size: 1.75rem;
+	margin-bottom: .75rem;
+}
+
+h4 {
+	font-size: 1.25rem;
+}
+
+p {
+	font-size: 1rem;
+	line-height: 1.5;
 }
 
 .wrapper {
@@ -75,40 +103,12 @@ body {
 header {
 	/* makes the header a stage for the main heading to be positioned relative to */
 	position: relative;
+	width: 100%;
 }
 
 header img {
 	/* has image inside header take up entire width of the header */
 	width: 100%;
-}
-
-h1 {
-	/* removes prop from the page and overlaps it on top of the header */
-	position:absolute;
-	top: 209px;
-	/* spans width of the content(text box) all the way across the header */
-	width: 100%;
-	text-align: center;
-	color:white;
-	font-size: 4rem;
-}
-
-h2 {
-	font-size: 2rem;
-}
-
-h3 {
-	font-size: 1.75rem;
-}
-
-h4 {
-	font-size: 1.5rem;
-}
-
-p {
-	font-size: 1rem;
-	line-height: 1.5;
-	padding: 16px;
 }
 
 nav {
@@ -126,7 +126,7 @@ nav li {
 	/* makes list elements sit in a row like inline elements while allowing block level property changes (like height) */
 	display: inline-block;
 	width: 32%;
-	padding: 16px 0;
+	padding: .5rem 0;
 	border-right: 1px solid #5c6565;
 }
 
@@ -135,12 +135,20 @@ nav li:last-child {
 	border-right: none;
 }
 
+#story {
+	padding: 10px;
+}
+
 #story img {
 	width: 250px;
 	/* creates empty space all around the image */
-	padding: 10px;
+	margin: 0 20px 39px 0; 
 	/* floats image to the left and has the paragraph surround and flow around it to the right */
 	float: left;
+}
+
+#story p {
+	padding-right: 15px;
 }
 
 .facts {
@@ -153,22 +161,24 @@ nav li:last-child {
 	list-style:inside;
 }
 
-form {
-	border: 1px solid black;
-	/* creates space left and right outside contact form border */
+#contact {
 	margin: 0 10px;
-	padding-left: 16px;
-	padding-top: 15px;
 }
 
-/* makes text bars in contact form take up the whole width of div so they move below their labels */
+form {
+	border: 1px solid black;
+	padding: 16px;
+}
+
 #contact #name, #email, #message {
+	/* moves inputs below their respective labels */
 	display: block;
 	width: 972px;
+	margin: 10px 0;
 }
 
 label {
-	line-height: 1.5;
+	font-size: 1rem;
 }
 
 h4 {
@@ -176,18 +186,25 @@ h4 {
 }
 
 textarea {
+	/* gets rid of the grabber that resizes the text area */
 	resize: none;
+	height: 100px;
 }
 
 button {
 	background-color: transparent;
 	border: 1px solid black;
+	/* adds space between border and text(content) in inside */
 	padding: 1em;
-	margin: 16px 0;
+	/* adds space on top of the button outisde its border */
+	margin-top: 16px;
 	font-size: .7rem;
 }
 
 footer p {
 	text-align: right;
+	/* adds space between footer border and copyright text */
 	padding: 35px 33px 37px ;
 }
+
+/* adjust font sizes 16px=12pt */
