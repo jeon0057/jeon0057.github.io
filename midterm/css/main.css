@@ -187,6 +187,11 @@ label {
 	font-size: 1rem;
 }
 
+input {
+	border: 1px solid lightgray;
+	height: 1.25rem;
+}
+
 h4 {
 	line-height: 2.5;
 }
