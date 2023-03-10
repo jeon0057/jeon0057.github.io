@@ -152,13 +152,14 @@ nav li:last-child {
 }
 
 .facts {
-	/* ensures section doesn't wrap around floated image */
+	/* ensures facts section doesn't wrap around floated image */
 	clear: left;
-	margin: 12px;
+	margin: 20px 12px;
 }
 
 .facts li {
-	list-style:inside;
+	/* makes bullet points a solid circle indented to the right (puts bullet points part of the text */
+	list-style: disc inside;
 }
 
 #contact {
@@ -167,6 +168,7 @@ nav li:last-child {
 
 form {
 	border: 1px solid black;
+	/* creates space between content within the form and the form border */
 	padding: 16px;
 }
 
@@ -206,5 +208,3 @@ footer p {
 	/* adds space between footer border and copyright text */
 	padding: 35px 33px 37px ;
 }
-
-/* adjust font sizes 16px=12pt */
