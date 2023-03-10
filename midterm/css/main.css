@@ -172,6 +172,10 @@ form {
 	padding: 16px;
 }
 
+form div:first-child {
+	margin-top: 15px;
+}
+
 #contact #name, #email, #message {
 	/* moves inputs below their respective labels */
 	display: block;
