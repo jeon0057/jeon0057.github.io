@@ -48,7 +48,12 @@ table {
 }
 /* end of css reset */
 
+
 /* default html for mobile view */
+/* colours: #c78c06, #ffe6ac, #222 and white */
+* {
+    box-sizing: border-box;
+}
 
 body {
     font-family: 'Open Sans', sans-serif;
@@ -57,4 +62,7 @@ body {
 .wrapper {
     max-width: 1200px;
     margin: auto;
+    padding: 28px;
 }
+
+/* breakpoint for screen size wider than 760px */
