@@ -50,6 +50,10 @@ table {
 
 /* default html for mobile view */
 
+body {
+    font-family: 'Alkatra', cursive;
+    font-family: 'Inter', sans-serif;
+}
 /* sets max width of container and centers content */
 .wrapper {
     max-width: 1200px;
