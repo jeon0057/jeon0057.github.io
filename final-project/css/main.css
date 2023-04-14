@@ -65,4 +65,56 @@ body {
     padding: 28px;
 }
 
+/* centered column nav list with full width background */
+.nav-bg {
+    background-color: #222;
+}
+
+nav {
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #c78c06;
+    font-size: 35pt;
+    font-weight: 400;
+}
+
+nav li {
+    padding: 45px ;
+}
+
+nav ul li:nth-child(1) {
+    background-color: #c78c06;
+    padding-top: 270px;
+}
+
+#home-button {
+    color: #222;
+}
+
+.logo {
+    float: left;
+    width: 200px;
+}
+
+header form {
+    display: flex;
+    width: 100%;
+}
+
+header input {
+    width: fit-content;
+    flex-grow: 1;
+    line-height: 1.5rem;
+}
+
+header button {
+    color: #c78c06;
+    background-color: #222;
+    border: 1px solid #c78c06;
+}
+/* make magnifying glass bigger */
+
 /* breakpoint for screen size wider than 760px */
