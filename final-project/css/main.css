@@ -58,14 +58,36 @@ table {
 body {
     font-family: 'Open Sans', sans-serif;
 }
+
+h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 1.5;
+}
+
+p {
+    font-size: .7rem;
+    line-height: 1.4;
+    padding: 10px 0;
+}
+
 /* sets max width of container and centers content */
 .wrapper {
     max-width: 1200px;
     margin: auto;
-    padding: 28px;
+    padding: 14px;
 }
 
-/* centered column nav list with full width background */
+.arrow-btn {
+    color: white;
+    background-color: #222;
+    border: transparent;
+    text-decoration: none;
+    padding: 25px 20px;
+    display: inline-block;
+}
+
+/* header: centered column nav list with full width background */
 .nav-bg {
     background-color: #222;
 }
@@ -116,5 +138,39 @@ header button {
     border: 1px solid #c78c06;
 }
 /* make magnifying glass bigger */
+
+/* welcome section */
+.welcome {
+    position: relative;
+}
+/* welcome content with text and link */
+#welcome {
+    width: 100%;
+    top: 200px;
+    color: white;
+    flex-direction: column;
+}
+
+.welcome-bg {
+    width: 100%;
+}
+
+/* dark semi-transparent background for banner content */
+.banner {
+    width: 100%;
+    /* position relatively to background image */
+    position: absolute;
+    top: 6%;
+    left: 0;
+    right: 0;
+    background-color: rgba(2, 2, 2, .6);
+    padding-top: 15px;
+    /* make it center automatically vertically on image bg */
+}
+
+#connect-btn {
+    background-color: #c78c06;
+    color: #222;
+}
 
 /* breakpoint for screen size wider than 760px */
