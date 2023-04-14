@@ -8,24 +8,24 @@
     <title>Final Project</title>
 </head>
 <body>
-    <!-- mobile: column. desktop: flex parent with logo, nav, form -->
-    <header class="nav-bg">
+    <div class="nav-bg">
         <div class="wrapper">
-            <div class="nav">
+            <!-- mobile: column. desktop: flex parent with logo, nav, form -->
+            <header class="nav">
+                <a href="index.html"><img src="images/logo.png" class="logo" alt="logo">Home</a>
                 <nav>
-                    <a href="index.html"><img src="images/logo.png" class="logo" alt="logo">Home</a>
                     <a href="#about">About Us</a>
                     <a href="#services">Services</a>
                     <a href="#team">Team</a>
                     <a href="#contact">Contact</a>
-                    <form action="#" method="get" id="search">
-                        <input type="text" placeholder="Search" name="search">
-                        <button type="submit" form="search"><i class="fa-solid fa-magnifying-glass"></i></button>
-                    </form>
                 </nav>
-            </div>
+                <form action="#" method="get" id="search">
+                    <input type="text" placeholder="Search" name="search">
+                    <button type="submit" form="search"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+            </header>
         </div>
-    </header>
+    </div>
     <!-- h1, p, and button  desktop: full-width background image and centered content-->
     <div class="welcome">
         <img src="images/main-banner.jpg" id="banner" alt="office">
