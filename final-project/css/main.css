@@ -99,17 +99,18 @@ nav {
 nav a {
     text-decoration: none;
     color: #c78c06;
-    font-size: 35pt;
+    font-size: 1rem;
     font-weight: 400;
+    line-height: 3rem;
 }
 
 nav li {
-    padding: 45px ;
+    /* padding: px ; */
 }
 
 nav ul li:nth-child(1) {
     background-color: #c78c06;
-    padding-top: 270px;
+    padding-top: 130px;
 }
 
 #home-button {
@@ -118,7 +119,7 @@ nav ul li:nth-child(1) {
 
 .logo {
     float: left;
-    width: 200px;
+    width: 100px;
 }
 
 header form {
