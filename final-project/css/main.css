@@ -62,11 +62,13 @@ html {
 }
 
 body {
+    /* google font 'Open Sans' */
     font-family: 'Open Sans', sans-serif;
     line-height: 1.5;
 }
 
 h1 {
+    /* 3 times root font size (16px) */
     font-size: 3rem;
     font-weight: 700;
 }
@@ -106,6 +108,7 @@ p {
     border: none;
     text-decoration: none;
     padding: 25px 20px;
+    /* makes buttons behave like inline elements adjustable like block level elements */
     display: inline-block;
     margin-top: 5px;
     font-size: 1rem;
@@ -127,6 +130,7 @@ nav {
 }
 
 nav a {
+    /* removes underline from nav links */
     text-decoration: none;
     color: #c78c06;
     font-size: 1rem;
@@ -182,8 +186,11 @@ header button {
 }
 
 .welcome {
+    /* adds office image as background for the welcome div */
     background: url(../images/main-banner.jpg);
+    /* makes bg image cover entire div */
     background-size: cover;
+    /* keeps bg image centered in the div */
     background-position: center;
     padding: 50px 0px;
     width: 100%;
@@ -191,19 +198,19 @@ header button {
 
 /* dark semi-transparent background for banner content */
 .banner {
+    /* takes up full width of wrapper */
     width: 100%;
-    top: 60%;
-    left: 0;
-    right: 0;
+    /* background color with alpha value adjusting opacity */
     background-color: rgba(2, 2, 2, .6);
     padding: 30px 10px 10px 10px;
 }
 
+/* styles yellow button in the welcome section */
 #connect-btn {
     background-color: #c78c06;
     color: #222;
 }
-
+/* makes arrow icon in button darker color */
 #connect-btn > .fa-play  {
     color: #222;
 }
@@ -246,7 +253,7 @@ header button {
 .vision {
     background: url(../images/vision.jpg);
     background-size: cover;
-    background-position: 50%;
+    background-position: center;
     color: white;
     padding: 10px;
 }
@@ -400,6 +407,7 @@ footer a {
         display: inline;
     }
 
+    /* targets home link in nav list */
     nav ul li:nth-child(1) {
         background-color: #c78c06;
         padding: 0px 20px;
@@ -438,11 +446,11 @@ footer a {
         display: grid;
         /* splits grid into 6 columns of equal width */
         grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: auto;
         grid-gap: 8px;
         margin: 20px 0px;
     }
 
+    /* makes arrow buttons take up full width of article minus padding and centers text */
     .services-grid .arrow-btn {
         width: 100%;
         text-align: center;
@@ -520,11 +528,12 @@ footer a {
         order: 1;
     }
 
+    /* targets location div */
     .location {
         height: 360px;
     }
-
-    iframe {
+    /* targets map inside location div */
+    .location iframe {
         height: 320px;
     }
 }
