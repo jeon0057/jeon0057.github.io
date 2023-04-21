@@ -67,8 +67,13 @@ body {
 
 h1 {
     font-size: 3rem;
-    font-weight: 800;
+    font-weight: 600;
     line-height: 1.5;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 600;
 }
 
 p {
@@ -164,7 +169,10 @@ header button {
 
 .welcome {
     background: url(../images/main-banner.jpg);
+    background-size: cover;
+    background-position: 15%;
     padding: 50px 0px;
+    width: 100%;
 }
 
 .welcome-bg {
@@ -189,6 +197,11 @@ header button {
 
 #connect-btn > .fa-play  {
     color: #222;
+}
+
+
+.about {
+    background-color: #ffe6ac;
 }
 
 /* breakpoint for screen size wider than 760px */
