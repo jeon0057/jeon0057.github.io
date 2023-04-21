@@ -169,7 +169,7 @@ header button {
 
 .welcome {
     background: url(../images/main-banner.jpg);
-    background-size: cover;
+    background-size: 100%;
     background-position: 15%;
     padding: 50px 0px;
     width: 100%;
@@ -202,6 +202,15 @@ header button {
 
 .about {
     background-color: #ffe6ac;
+    padding: 10px;
+}
+
+.about img {
+    width: 100%;
+}
+
+.about article {
+    padding: 25px 0px 5px 0px;
 }
 
 /* breakpoint for screen size wider than 760px */
@@ -243,5 +252,17 @@ header button {
     .logo {
         float: none;
         width: 70px;
+    }
+
+    #about {
+        display: flex;
+    }
+
+    .about img {
+        width: 50%;
+    }
+
+    .about article {
+        padding: 5px 0px 0px 5px;
     }
 }
