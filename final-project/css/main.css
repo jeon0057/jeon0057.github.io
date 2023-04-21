@@ -295,6 +295,11 @@ header button {
         align-items: center;
     }
 
+    nav a {
+        font-size: .8rem;
+        line-height: 3;
+    }
+
     .nav-bg {
         padding: 20px;
     }
@@ -316,6 +321,7 @@ header button {
 
     header form {
         width: auto;
+        flex-basis: 10%;
     }
 
     .logo {
