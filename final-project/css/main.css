@@ -471,4 +471,32 @@ iframe {
     #bob-pic {
         order: 1;
     }
+
+    /* arranges contact us section into a grid */
+    .contact-grid {
+        display: grid;
+        /* creates a grid with 2 equal-width columns */
+        grid-template-columns: repeat(2, 1fr);
+        /* puts space between grid items */
+        grid-gap: 10px;
+    }
+
+    .contact-grid h2 {
+        /* makes h2 element span 2 grid columns(tracks) */
+        grid-column: span 2;
+    }
+
+    .hours {
+        grid-column: span 2;
+        /* sends hours table to the end of grid order */
+        order: 1;
+    }
+
+    .location {
+        height: 360px;
+    }
+
+    iframe {
+        height: 320px;
+    }
 }
