@@ -95,7 +95,6 @@ p {
 
 /* sets max width of container and centers content */
 .wrapper {
-    width: 100%;
     margin: auto;
     max-width: 1200px;
 }
@@ -184,8 +183,8 @@ header button {
 
 .welcome {
     background: url(../images/main-banner.jpg);
-    background-size: 100%;
-    background-position: 15%;
+    background-size: cover;
+    background-position: center;
     padding: 50px 0px;
     width: 100%;
 }
@@ -367,10 +366,6 @@ footer a {
 
 /* breakpoint for screen size 760px and wider */
 @media screen and (min-width: 760px) {
-    .wrapper {
-        width: 760px;
-    }
-    
     header {
         display: flex;
         justify-content: space-between;
