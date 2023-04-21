@@ -68,23 +68,23 @@ body {
 
 h1 {
     font-size: 3rem;
-    font-weight: 900;
+    font-weight: 700;
 }
 
 h2 {
     font-size: 2rem;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 h3 {
     font-size: 1.4rem;
-    font-weight: 600;
+    font-weight: 700;
     margin: 5px 0px;
 }
 
 h4 {
     font-size: .7rem;
-    font-weight: 900;
+    font-weight: 800;
 }
 
 p {
@@ -100,6 +100,7 @@ p {
     max-width: 1200px;
 }
 
+/* styles all of the navigation buttons with arrows on them */
 .arrow-btn {
     color: white;
     background-color: #222;
@@ -108,6 +109,7 @@ p {
     padding: 25px 20px;
     display: inline-block;
     margin-top: 5px;
+    font-size: 1rem;
 }
 
 .fa-play {
@@ -431,6 +433,7 @@ footer a {
         grid-template-columns: repeat(6, 1fr);
         grid-template-rows: auto;
         grid-gap: 8px;
+        margin: 20px 0px;
     }
 
     .services-grid .arrow-btn {
