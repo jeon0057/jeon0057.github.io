@@ -298,25 +298,44 @@ header button {
     line-height: 1.25rem;
 }
 
+/* styles message tex box */
 .contact-grid textarea {
     width: 100%;
     /* disable resizing of message box */
     resize: none;
     line-height: 1.5;
-
     height: 7rem;
 }
 
+/* sets font size for input labels */
 .contact-grid label {
     font-size: .7rem;
 }
 
+/* styles send button */
 .contact-grid button {
     background-color: #222;
     color: #c78c06;
     border: none;
     padding: 5px;
     font-size: 1rem;
+}
+
+/* styles Hours of Operation table */
+table {
+    width: 100%;
+}
+
+/* borders around each cell */
+table, th, td {
+    border: 1px solid black;
+    padding: .5rem;
+    font-size: .7rem;
+}
+
+/* applies light yellow background to table heading row */
+th {
+    background-color: #ffe6ac;
 }
 
 /* breakpoint for screen size 760px and wider */
