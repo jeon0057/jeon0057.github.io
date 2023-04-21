@@ -338,6 +338,17 @@ th {
     background-color: #ffe6ac;
 }
 
+
+/* styles location section */
+.location {
+    margin: 10px 0px;
+}
+/* adjusts size of map */
+iframe {
+    width: 100%;
+    height: 400px;
+}
+
 /* breakpoint for screen size 760px and wider */
 @media screen and (min-width: 760px) {
     .wrapper {
