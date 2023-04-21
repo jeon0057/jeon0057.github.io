@@ -231,6 +231,10 @@ header button {
     margin: 10px 0px;
 }
 
+.services-grid {
+    margin: 20px 10px;
+}
+
 .services-grid img {
     width: 100%;
 }
@@ -270,6 +274,7 @@ header button {
 .team-flex article {
     background-color: #ffe6ac;
     margin-bottom: 10px;
+    padding-bottom: 20px
 }
 
 /* creates line under team member's role */
@@ -282,6 +287,37 @@ header button {
     width: 100%;
 }
 
+/* styles contact form for mobile */
+.contact-grid {
+    margin: 10px;
+}
+
+/* makes text input bars full width and taller */
+.contact-grid input {
+    width: 100%;
+    line-height: 1.25rem;
+}
+
+.contact-grid textarea {
+    width: 100%;
+    /* disable resizing of message box */
+    resize: none;
+    line-height: 1.5;
+
+    height: 7rem;
+}
+
+.contact-grid label {
+    font-size: .7rem;
+}
+
+.contact-grid button {
+    background-color: #222;
+    color: #c78c06;
+    border: none;
+    padding: 5px;
+    font-size: 1rem;
+}
 
 /* breakpoint for screen size 760px and wider */
 @media screen and (min-width: 760px) {
@@ -345,7 +381,7 @@ header button {
         display: grid;
         /* splits grid into 6 columns of equal width */
         grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: 3;
+        grid-template-rows: auto;
         grid-gap: 8px;
     }
 
