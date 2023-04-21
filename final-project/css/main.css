@@ -67,19 +67,26 @@ body {
 
 h1 {
     font-size: 3rem;
-    font-weight: 600;
+    font-weight: 900;
     line-height: 1.5;
 }
 
 h2 {
     font-size: 2rem;
     font-weight: 600;
+    line-height: 1.5;
+}
+
+h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.5;
 }
 
 p {
     font-size: .7rem;
     line-height: 1.4;
-    padding: 10px 0;
+    padding: 5px 0;
 }
 
 /* sets max width of container and centers content */
@@ -95,6 +102,7 @@ p {
     text-decoration: none;
     padding: 25px 20px;
     display: inline-block;
+    margin-top: 5px;
 }
 
 .fa-play {
@@ -187,7 +195,6 @@ header button {
     right: 0;
     background-color: rgba(2, 2, 2, .6);
     padding: 10px;
-    /* make it center automatically vertically on image bg */
 }
 
 #connect-btn {
@@ -210,7 +217,27 @@ header button {
 }
 
 .about article {
-    padding: 25px 0px 5px 0px;
+    padding: 10px 0px;
+}
+
+#services {
+    padding: 10px;
+}
+
+/* background colour behind text */
+.services-grid article {
+    background-color: #ffe6ac;
+    /* adds space between articles */
+    margin: 10px 0px;
+}
+
+.services-grid img {
+    width: 100%;
+}
+
+/* adds padding around just the text in each article */
+.padded-txt {
+    padding: 10px;
 }
 
 /* breakpoint for screen size wider than 760px */
@@ -219,7 +246,6 @@ header button {
         width: 760px;
     }
     
-
     header {
         display: flex;
         justify-content: space-evenly;
@@ -264,5 +290,36 @@ header button {
 
     .about article {
         padding: 5px 0px 0px 5px;
+    }
+
+    .services-grid {
+        display: grid;
+        /* splits grid into 6 columns of equal width */
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: 3;
+        grid-gap: 8px;
+    }
+
+    .services-grid .arrow-btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* makes title occupy entire top row of grid */
+    #our-services {
+        grid-column: 1 / span 6;
+    }
+
+    /* makes first two articles take up half of the grid's width */
+    .digital , 
+    .marketing {
+        grid-column: span 3;
+    }
+
+    /* makes last three articles each take up 1/3 of grid width */
+    .video , 
+    .web , 
+    .print {
+        grid-column: span 2;
     }
 }
