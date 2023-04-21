@@ -152,7 +152,7 @@ header form {
     display: flex;
     width: 100%;
     height: 35px;
-
+    padding: 0px 10px;
 }
 
 header input {
@@ -368,26 +368,36 @@ footer a {
 @media screen and (min-width: 760px) {
     header {
         display: flex;
+        /* distributes remaining space evenly between flex items along the main axis */
         justify-content: space-between;
         align-items: center;
     }
 
+    /* makes nav list take up full remaining width of nav bar */
+    nav {
+        flex-grow: 1;
+        max-width: 600px;
+    }
+
+    /* styles nav link fonts */
     nav a {
-        font-size: .8rem;
+        font-size: .9rem;
         line-height: 3;
     }
 
+    /* dark background for nav bar */
     .nav-bg {
         padding: 20px;
     }
 
     nav ul {
         display: flex;
+        /* distributes remaining space evenly throughout the flex container along the main axis */
+        justify-content: space-evenly;
     }
 
     nav li {
         display: inline;
-        padding: 0px 20px;
     }
 
     nav ul li:nth-child(1) {
@@ -398,7 +408,7 @@ footer a {
 
     header form {
         width: auto;
-        flex-basis: 10%;
+        padding: 0;
     }
 
     .logo {
@@ -410,6 +420,8 @@ footer a {
         padding: 30px 0px;
     }
 
+
+    /* styles side to side layout of about us section */
     #about {
         display: flex;
     }
