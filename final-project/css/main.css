@@ -91,6 +91,11 @@ p {
     display: inline-block;
 }
 
+.fa-play {
+    padding: 5px 10px;
+    color: white;
+}
+
 /* header: centered column nav list with full width background */
 .nav-bg {
     background-color: #222;
@@ -171,6 +176,10 @@ header button {
 
 #connect-btn {
     background-color: #c78c06;
+    color: #222;
+}
+
+#connect-btn > .fa-play  {
     color: #222;
 }
 
