@@ -63,25 +63,28 @@ html {
 
 body {
     font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
 }
 
 h1 {
     font-size: 3rem;
     font-weight: 900;
-    line-height: 1.5;
 }
 
 h2 {
     font-size: 2rem;
     font-weight: 600;
-    line-height: 1.5;
 }
 
 h3 {
     font-size: 1.4rem;
     font-weight: 600;
-    line-height: 1.5;
     margin: 5px 0px;
+}
+
+h4 {
+    font-size: .7rem;
+    font-weight: 900;
 }
 
 p {
@@ -252,7 +255,35 @@ header button {
     /* adjusts opacity of button */
     background-color: rgba(22, 22, 22, .65)
 }
-/* breakpoint for screen size wider than 760px */
+
+/* Our Team section */
+.team-flex {
+    display: flex;
+    /* makes flex children wrap to make rows */
+    flex-wrap: wrap;
+    padding: 10px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+/* background colour behind the text */
+.team-flex article {
+    background-color: #ffe6ac;
+    margin-bottom: 10px;
+}
+
+/* creates line under team member's role */
+.bio h4 {
+    border-bottom: #c78c06 2px solid;
+}
+
+/* makes profile images take up full width of team section */
+.team-flex img {
+    width: 100%;
+}
+
+
+/* breakpoint for screen size 760px and wider */
 @media screen and (min-width: 760px) {
     .wrapper {
         width: 760px;
@@ -260,7 +291,7 @@ header button {
     
     header {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
         align-items: center;
     }
 
@@ -333,5 +364,39 @@ header button {
     .web , 
     .print {
         grid-column: span 2;
+    }
+
+    
+    /* Applies flex layout to Our Team section */
+    .team-flex {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 0;
+    }
+
+    /* makes flex items each take up half of section width */
+    *.team-item {
+        flex-basis: 50%;
+    }
+
+    .team-flex img {
+        width: 50%;
+    }
+
+    /* puts Our Team h2 in its own row */
+    .our-team {
+        flex-basis: 100%;
+        padding-bottom: 5px;
+    }
+
+    /* eliminates space between atricles from mobile view */
+    .team-flex article {
+        margin-bottom: 0;
+    }
+
+    /* sends bob's picture to the end (bottom right) */
+    #bob-pic {
+        order: 1;
     }
 }

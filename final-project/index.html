@@ -120,23 +120,21 @@
     </div>
     <!-- our team: mobile: column  desktop: flex parent with order on bob's picture. Wrap content. -->
     <div class="wrapper">
-        <section id="team">
-            <h2>Our Team</h2>
-            <!-- flex parent with:  -->
-            <div class="team">
-                <img src="images/john.jpg" alt="John Doe">
-                <article class="bio">
-                    <h3>John Doe</h3>
-                    <h4>CEO and Co-owner</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis voluptatum voluptates labore nihil ut pariatur eveniet incidunt similique esse itaque aliquam non facere vero, illo cumque consectetur sapiente amet quia.</p>
-                </article>
-                <img src="images/bob.jpg" alt="Bob Rite">
-                <article class="bio">
-                    <h3>Bob Rite</h3>
-                    <h4>CFO and Co-owner</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis voluptatum voluptates labore nihil ut pariatur eveniet incidunt similique esse itaque aliquam non facere vero, illo cumque consectetur sapiente amet quia.</p>
-                </article>
-            </div>
+        <section id="team" class="team-flex">
+            <!-- flex parent with: team profiles and h2 -->
+            <h2 class="our-team team-item">Our Team</h2>
+            <img src="images/john.jpg" alt="John Doe" id="john-pic">
+            <article class="bio padded-txt team-item">
+                <h3>John Doe</h3>
+                <h4>CEO and Co-owner</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis voluptatum voluptates labore nihil ut pariatur eveniet incidunt similique esse itaque aliquam non facere vero, illo cumque consectetur sapiente amet quia.</p>
+            </article>
+            <img src="images/bob.jpg" alt="Bob Rite" id="bob-pic">
+            <article class="bio padded-txt team-item">
+                <h3>Bob Rite</h3>
+                <h4>CFO and Co-owner</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis voluptatum voluptates labore nihil ut pariatur eveniet incidunt similique esse itaque aliquam non facere vero, illo cumque consectetur sapiente amet quia.</p>
+            </article>
         </section>
     </div>
     <!-- contact us: mobile: form, hours table, embedded map  desktop: grid parent with order on hours. Hours is full width the rest are 1fr -->
