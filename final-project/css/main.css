@@ -79,7 +79,7 @@ p {
 
 /* sets max width of container and centers content */
 .wrapper {
-    width: 90%;
+    width: 100%;
     margin: auto;
 }
 
@@ -156,22 +156,24 @@ header button {
 /* welcome section */
 
 /* welcome content with text and link */
-#welcome {
+#welcome-text {
     width: 100%;
     top: 200px;
     color: white;
 }
 
+.welcome {
+    background: url(../images/main-banner.jpg);
+    padding: 50px 0px;
+}
+
 .welcome-bg {
     width: 100%;
-    position: relative;
 }
 
 /* dark semi-transparent background for banner content */
 .banner {
     width: 100%;
-    /* position relatively to background image */
-    position: absolute;
     top: 60%;
     left: 0;
     right: 0;
