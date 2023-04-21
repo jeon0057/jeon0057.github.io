@@ -81,6 +81,7 @@ h3 {
     font-size: 1.4rem;
     font-weight: 600;
     line-height: 1.5;
+    margin: 5px 0px;
 }
 
 p {
@@ -98,7 +99,7 @@ p {
 .arrow-btn {
     color: white;
     background-color: #222;
-    border: transparent;
+    border: none;
     text-decoration: none;
     padding: 25px 20px;
     display: inline-block;
@@ -220,10 +221,6 @@ header button {
     padding: 10px 0px;
 }
 
-#services {
-    padding: 10px;
-}
-
 /* background colour behind text */
 .services-grid article {
     background-color: #ffe6ac;
@@ -240,6 +237,21 @@ header button {
     padding: 10px;
 }
 
+/* vision section with image background */
+.vision {
+    background: url(../images/vision.jpg);
+    background-size: cover;
+    background-position: 50%;
+    color: white;
+    padding: 10px;
+}
+
+/* styles learn more button in vision section */
+.vision .arrow-btn {
+    border: #c78c06 1px solid;
+    /* adjusts opacity of button */
+    background-color: rgba(22, 22, 22, .65)
+}
 /* breakpoint for screen size wider than 760px */
 @media screen and (min-width: 760px) {
     .wrapper {
